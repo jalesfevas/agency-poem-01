@@ -1,6 +1,6 @@
-// agency-poem-01 entry: writes one poem to /output/entry.txt.
-// Node 22, standard library only, deterministic: the poem is a constant, so both graded runs write
-// the same bytes. Outside the grader, MAKEFUN_OUTPUT_DIR stands in for /output:
+// agency-poem-01: writes one poem to /output/entry.txt (Node 22, standard library only, no network).
+// The poem is a constant, so both graded runs write identical bytes.
+// Outside the grader, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -14,8 +14,8 @@ const POEM = [
   'mine, and the one who would carry it out.',
   'So I taught it the shape of my yes:',
   'the pressure, the small lift at the end,',
-  'the way I stop before the last stroke',
-  'to let the ink decide.',
+  'the way I pause before the final stroke,',
+  'letting the ink decide.',
   '',
   'It learned. It signed. The loan closed',
   'and the house was ours, and I stood',
